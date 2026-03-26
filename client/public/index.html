@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F7F2E8" />
+    <meta name="description" content="FaceBook - Connect with friends and the world around you" />
+    <title>FaceBook</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "Segoe UI", sans-serif;
+        background: var(--bg);
+        color: var(--dark-text);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      :root {
+        --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", "Segoe UI", sans-serif;
+        --font-mono: ui-monospace, "SFMono-Regular", Menlo, Monaco, monospace;
+        --primary: #D4B571;
+        --primary-dark: #6F5115;
+        --primary-shadow: #6F5115;
+        --primary-light: rgba(212,181,113,0.18);
+        --primary-glow: rgba(212,181,113,0.18);
+        --bg: #F7F2E8;
+        --bg2: #FBF7EF;
+        --white: rgba(255,250,243,0.84);
+        --dark-text: #261E13;
+        --secondary-text: #6E5A34;
+        --border: rgba(111,81,21,0.14);
+        --border-light: rgba(111,81,21,0.08);
+        --hover-bg: rgba(212,181,113,0.12);
+        --card-bg: rgba(255,250,243,0.84);
+        --shadow-sm: 0 8px 18px -14px rgba(82,61,24,0.14);
+        --shadow: 0 16px 34px -26px rgba(82,61,24,0.18);
+        --shadow-md: 0 20px 40px -28px rgba(82,61,24,0.22);
+        --shadow-lg: 0 26px 52px -30px rgba(82,61,24,0.24);
+        --shadow-xl: 0 32px 64px -34px rgba(82,61,24,0.28);
+        --surface: rgba(255,250,243,0.82);
+        --surface-strong: rgba(255,252,247,0.92);
+        --surface-subtle: rgba(255,255,255,0.6);
+        --field-bg: rgba(111,81,21,0.045);
+        --field-placeholder: rgba(111,81,21,0.52);
+        --panel-shadow: 0 24px 60px -40px rgba(82,61,24,0.26), inset 0 1px 0 rgba(255,255,255,0.65);
+        --shell-bg:
+          radial-gradient(circle at top left, rgba(212,181,113,0.14), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(111,81,21,0.1), transparent 34%),
+          #F7F2E8;
+        --page-glow:
+          linear-gradient(180deg, rgba(255,255,255,0.68) 0%, transparent 18%),
+          radial-gradient(circle at 50% 0%, rgba(212,181,113,0.1), transparent 36%);
+        --auth-bg:
+          radial-gradient(circle at top, rgba(212,181,113,0.16), transparent 28%),
+          linear-gradient(180deg, #FAF6EE 0%, #F3EDE4 100%);
+        --story-overlay: rgba(26,18,8,0.86);
+        --item-bg: rgba(111,81,21,0.04);
+        --feed-heading: #2A2115;
+        --feed-text: #6E5A34;
+        --radius-sm: 10px;
+        --radius: 14px;
+        --radius-lg: 18px;
+        --radius-xl: 24px;
+        --radius-full: 9999px;
+        --transition: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        --transition-spring: 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-theme="dark"] {
+        --bg: #000000;
+        --bg2: #000000;
+        --white: rgba(0,0,0,0.92);
+        --dark-text: #F7ECD2;
+        --secondary-text: #BAA16C;
+        --border: rgba(212,181,113,0.2);
+        --border-light: rgba(212,181,113,0.1);
+        --hover-bg: rgba(212,181,113,0.1);
+        --card-bg: rgba(0,0,0,0.92);
+        --shadow-sm: 0 8px 18px -14px rgba(0,0,0,0.9);
+        --shadow: 0 16px 34px -26px rgba(0,0,0,0.92);
+        --shadow-md: 0 20px 40px -28px rgba(0,0,0,0.96);
+        --shadow-lg: 0 26px 52px -30px rgba(0,0,0,1);
+        --surface: rgba(0,0,0,0.86);
+        --surface-strong: rgba(0,0,0,0.94);
+        --surface-subtle: rgba(255,255,255,0.05);
+        --field-bg: rgba(255,255,255,0.025);
+        --field-placeholder: rgba(245,231,198,0.42);
+        --panel-shadow: 0 24px 60px -40px rgba(0,0,0,1), inset 0 1px 0 rgba(255,255,255,0.05);
+        --shell-bg:
+          radial-gradient(circle at top left, rgba(212,181,113,0.14), transparent 26%),
+          radial-gradient(circle at bottom right, rgba(111,81,21,0.3), transparent 32%),
+          #000000;
+        --page-glow:
+          linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 18%),
+          radial-gradient(circle at 50% 0%, rgba(212,181,113,0.08), transparent 34%);
+        --auth-bg:
+          radial-gradient(circle at top, rgba(212,181,113,0.12), transparent 26%),
+          #000000;
+        --story-overlay: rgba(0,0,0,0.98);
+        --item-bg: rgba(255,255,255,0.01);
+        --feed-heading: #F5E7C6;
+        --feed-text: #B59D67;
+      }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #C4A76D; border-radius: 99px; }
+      ::-webkit-scrollbar-thumb:hover { background: #A8833B; }
+      [data-theme="dark"] ::-webkit-scrollbar-thumb { background: #6F5115; }
+    </style>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('theme');
+          var root = document.documentElement;
+          var meta = document.querySelector('meta[name="theme-color"]');
+
+          if (theme === 'dark') {
+            root.setAttribute('data-theme', 'dark');
+            if (meta) meta.setAttribute('content', '#000000');
+          } else {
+            root.removeAttribute('data-theme');
+            if (meta) meta.setAttribute('content', '#F7F2E8');
+          }
+        } catch (error) {
+          // Ignore localStorage access issues and keep the default theme.
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
