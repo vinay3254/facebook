@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { BellIcon, CompassIcon, HomeIcon, MessageIcon, UsersIcon } from '../ui/Icons';
+import { BellIcon, HomeIcon, MessageIcon, UsersIcon } from '../ui/Icons';
 
 const Sidebar = ({ side = 'left' }) => {
   const { user } = useAuth();
@@ -28,11 +28,6 @@ const Sidebar = ({ side = 'left' }) => {
         <Link to="/friends" className={`sidebar-item ${location.pathname === '/friends' ? 'active' : ''}`}>
           <div className="sidebar-icon"><UsersIcon size={18} /></div>
           <span>Friends</span>
-        </Link>
-
-        <Link to="/explore" className={`sidebar-item ${location.pathname === '/explore' ? 'active' : ''}`}>
-          <div className="sidebar-icon"><CompassIcon size={18} /></div>
-          <span>Explore</span>
         </Link>
 
         <Link to="/messenger" className={`sidebar-item ${location.pathname === '/messenger' ? 'active' : ''}`}>
