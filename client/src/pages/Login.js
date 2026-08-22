@@ -44,8 +44,8 @@ const Login = () => {
     <div className="auth-page">
       <div className="auth-container">
         <div className="auth-brand">
-          <h1>FaceBook</h1>
-          <p>Connect with friends and the world around you on FaceBook.</p>
+          <h1>Reunion</h1>
+          <p>Connect with friends and the world around you on Reunion.</p>
         </div>
 
         <div className="auth-card">

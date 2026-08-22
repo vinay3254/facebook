@@ -52,7 +52,7 @@ const Sidebar = ({ side = 'left' }) => {
           </Link>
         ))}
         <div style={{ padding: '8px 8px', fontSize: '13px', color: 'var(--secondary-text)', marginTop: '8px' }}>
-          Facebook © {year}
+          Reunion © {year}
         </div>
       </div>
     );

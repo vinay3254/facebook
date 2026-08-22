@@ -3,7 +3,7 @@ import { useAuth } from '../../context/AuthContext';
 import { getStoriesAPI, createStoryAPI, viewStoryAPI } from '../../api';
 import { CloseIcon, ImageIcon, PlusIcon } from '../ui/Icons';
 
-const STORY_COLORS = ['#D4B571', '#C39A4E', '#8D6A29', '#6F5115', '#A88239', '#BFA169', '#8D733F'];
+const STORY_COLORS = ['#105666', '#0A3323', '#839958', '#D3968C', '#F7F4D5'];
 
 const StoryBar = () => {
   const { user } = useAuth();
@@ -12,7 +12,7 @@ const StoryBar = () => {
   const [viewingGroup, setViewingGroup] = useState(null);
   const [viewingIndex, setViewingIndex] = useState(0);
   const [text, setText] = useState('');
-  const [bgColor, setBgColor] = useState('#D4B571');
+  const [bgColor, setBgColor] = useState('#105666');
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -54,7 +54,7 @@ const StoryBar = () => {
       await createStoryAPI(formData);
       setShowCreate(false);
       setText('');
-      setBgColor('#D4B571');
+      setBgColor('#105666');
       setImageFile(null);
       setImagePreview('');
       fetchStories();
@@ -254,7 +254,7 @@ const StoryBar = () => {
             {/* Background color picker (text stories) */}
             {!imagePreview && (
               <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', flexWrap: 'wrap' }}>
-                {['#D4B571', ...STORY_COLORS].map(c => (
+                {STORY_COLORS.map(c => (
                   <div
                     key={c}
                     onClick={() => setBgColor(c)}

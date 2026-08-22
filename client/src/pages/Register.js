@@ -33,7 +33,7 @@ const Register = () => {
     setLoading(true);
     try {
       await register(form);
-      toast.success('Account created! Welcome to FaceBook!');
+      toast.success('Account created! Welcome to Reunion!');
       navigate('/');
     } catch (err) {
       const msg = err.response?.data?.message || 'Registration failed';
@@ -47,7 +47,7 @@ const Register = () => {
   return (
     <div className="auth-page" style={{ alignItems: 'flex-start', paddingTop: '40px' }}>
       <div style={{ width: '100%', maxWidth: '432px', margin: '0 auto' }}>
-        <h1 style={{ fontSize: '32px', fontWeight: 800, color: 'var(--primary)', textAlign: 'center', marginBottom: '8px' }}>FaceBook</h1>
+        <h1 style={{ fontSize: '32px', fontWeight: 800, color: 'var(--primary)', textAlign: 'center', marginBottom: '8px' }}>Reunion</h1>
 
         <div className="auth-card">
           <h2 style={{ fontSize: '24px', marginBottom: '4px' }}>Create a new account</h2>

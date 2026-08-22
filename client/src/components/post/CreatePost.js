@@ -12,14 +12,14 @@ import {
 } from '../ui/Icons';
 
 const FEELINGS = [
-  { label: 'inspired', color: '#D4B571' },
-  { label: 'grateful', color: '#C29A4A' },
-  { label: 'curious', color: '#A67A2F' },
-  { label: 'energized', color: '#E0C487' },
-  { label: 'celebrating', color: '#8F6930' },
-  { label: 'proud', color: '#6F5115' },
-  { label: 'relaxed', color: '#9D834C' },
-  { label: 'hopeful', color: '#B99652' },
+  { label: 'inspired', color: '#105666' },
+  { label: 'grateful', color: '#839958' },
+  { label: 'curious', color: '#D3968C' },
+  { label: 'energized', color: '#105666' },
+  { label: 'celebrating', color: '#839958' },
+  { label: 'proud', color: '#0A3323' },
+  { label: 'relaxed', color: '#839958' },
+  { label: 'hopeful', color: '#105666' },
 ];
 
 const privacyOptions = [

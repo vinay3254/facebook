@@ -3050,8 +3050,8 @@ body::before {
 .post-textarea:focus,
 .feed-search-field:focus-within,
 .feed-sort-select:focus {
-  border-color: rgba(212,181,113,0.28);
-  box-shadow: 0 0 0 4px rgba(212,181,113,0.08);
+  border-color: rgba(16,86,102,0.34);
+  box-shadow: 0 0 0 4px rgba(16,86,102,0.1);
 }
 
 .navbar-search input::placeholder,
@@ -3062,19 +3062,19 @@ body::before {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #E0C78E 0%, #D4B571 54%, #B88C38 100%);
-  color: #090B0B;
-  box-shadow: 0 20px 36px -24px rgba(212,181,113,0.56);
+  background: linear-gradient(135deg, #105666 0%, #0A3323 100%);
+  color: #F7F4D5;
+  box-shadow: 0 20px 36px -24px rgba(16,86,102,0.56);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #E6D19D 0%, #D4B571 52%, #A97A22 100%);
-  box-shadow: 0 24px 42px -24px rgba(212,181,113,0.48);
+  background: linear-gradient(135deg, #166B7E 0%, #0E422F 100%);
+  box-shadow: 0 24px 42px -24px rgba(16,86,102,0.48);
 }
 
 .btn-primary:disabled {
-  background: rgba(212,181,113,0.38);
-  color: rgba(9,11,11,0.72);
+  background: rgba(16,86,102,0.38);
+  color: rgba(247,244,213,0.72);
 }
 
 .btn-secondary,
@@ -3085,7 +3085,7 @@ body::before {
 
 .btn-secondary {
   background: var(--primary-light);
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 
 .btn-ghost {
@@ -3112,7 +3112,7 @@ body::before {
 .sidebar-item.active {
   color: var(--primary);
   background: var(--primary-light);
-  border: 1px solid rgba(212,181,113,0.18);
+  border: 1px solid rgba(16,86,102,0.18);
 }
 
 .nav-icon-btn.active::after {
@@ -3121,8 +3121,8 @@ body::before {
 
 .nav-badge,
 .mobile-nav-badge {
-  background: var(--primary);
-  color: #090B0B;
+  background: #D3968C;
+  color: #FFFFFF;
   border-color: var(--surface-strong);
 }
 
@@ -3138,8 +3138,8 @@ body::before {
 
 .avatar-placeholder,
 .profile-avatar-placeholder {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: #090B0B;
+  background: linear-gradient(135deg, #839958 0%, #105666 100%);
+  color: #F7F4D5;
 }
 
 .sidebar-icon,
@@ -3161,7 +3161,7 @@ body::before {
   background: var(--surface-strong);
   border-color: var(--border-light);
   box-shadow:
-    0 18px 36px -24px rgba(82,61,24,0.18),
+    0 18px 36px -24px rgba(10,51,35,0.18),
     inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
@@ -3177,7 +3177,7 @@ body::before {
 
 .story-card:hover {
   box-shadow:
-    0 24px 40px -22px rgba(82,61,24,0.22),
+    0 24px 40px -22px rgba(10,51,35,0.22),
     inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
@@ -3212,9 +3212,9 @@ body::before {
   gap: 22px;
   overflow: hidden;
   background:
-    radial-gradient(circle at top right, rgba(212,181,113,0.22), transparent 34%),
-    radial-gradient(circle at bottom left, rgba(111,81,21,0.14), transparent 38%),
-    linear-gradient(135deg, rgba(255,251,242,0.95), rgba(247,242,232,0.92));
+    radial-gradient(circle at top right, rgba(131,153,88,0.22), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(10,51,35,0.14), transparent 38%),
+    linear-gradient(135deg, rgba(255,253,240,0.95), rgba(247,244,213,0.92));
 }
 
 .guide-hero::after {
@@ -3224,7 +3224,7 @@ body::before {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: rgba(212,181,113,0.12);
+  background: rgba(131,153,88,0.14);
   filter: blur(8px);
   pointer-events: none;
 }
@@ -3245,7 +3245,7 @@ body::before {
   width: fit-content;
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(212,181,113,0.16);
+  background: rgba(131,153,88,0.18);
   color: var(--primary-dark);
   font-size: 0.78rem;
   font-weight: 700;
@@ -3286,7 +3286,7 @@ body::before {
   padding: 10px 14px;
   border-radius: 16px;
   background: rgba(255,255,255,0.66);
-  border: 1px solid rgba(212,181,113,0.22);
+  border: 1px solid rgba(16,86,102,0.22);
   color: var(--dark-text);
   font-size: 0.92rem;
 }
@@ -3303,7 +3303,7 @@ body::before {
   padding: 16px;
   border-radius: 18px;
   background: rgba(255,255,255,0.68);
-  border: 1px solid rgba(212,181,113,0.2);
+  border: 1px solid rgba(16,86,102,0.2);
 }
 
 .guide-highlight strong {
@@ -3372,7 +3372,7 @@ body::before {
 
 .guide-filter-btn.active {
   background: var(--primary-light);
-  border-color: rgba(212,181,113,0.32);
+  border-color: rgba(16,86,102,0.32);
   color: var(--primary-dark);
 }
 
@@ -3445,7 +3445,7 @@ body::before {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: rgba(212,181,113,0.14);
+  background: rgba(16,86,102,0.14);
   color: var(--primary-dark);
   flex-shrink: 0;
   transition: transform var(--transition);
@@ -3534,7 +3534,7 @@ body::before {
 .guide-source-chip:hover,
 .guide-reference-link:hover {
   color: var(--primary-dark);
-  border-color: rgba(212,181,113,0.32);
+  border-color: rgba(16,86,102,0.32);
 }
 
 .guide-reference-head {
@@ -3605,8 +3605,8 @@ body::before {
   padding: 24px;
   overflow: hidden;
   background:
-    radial-gradient(circle at top right, rgba(212,181,113,0.22), transparent 32%),
-    linear-gradient(140deg, rgba(255,251,242,0.96), rgba(247,242,232,0.92));
+    radial-gradient(circle at top right, rgba(131,153,88,0.22), transparent 32%),
+    linear-gradient(140deg, rgba(255,253,240,0.96), rgba(247,244,213,0.92));
 }
 
 .explore-kicker,
@@ -3617,7 +3617,7 @@ body::before {
   min-height: 28px;
   padding: 0 12px;
   border-radius: 999px;
-  background: rgba(212,181,113,0.16);
+  background: rgba(131,153,88,0.18);
   color: var(--primary-dark);
   font-size: 0.76rem;
   font-weight: 800;
@@ -3842,7 +3842,7 @@ body::before {
 .surface-pill.active {
   background: var(--primary-light);
   color: var(--primary-dark);
-  border-color: rgba(212,181,113,0.28);
+  border-color: rgba(16,86,102,0.28);
 }
 
 .pill-row {
@@ -3898,8 +3898,8 @@ body::before {
 .text-area-field textarea:focus,
 .surface-select:focus {
   outline: none;
-  border-color: rgba(212,181,113,0.44);
-  box-shadow: 0 0 0 4px rgba(212,181,113,0.12);
+  border-color: rgba(16,86,102,0.44);
+  box-shadow: 0 0 0 4px rgba(16,86,102,0.12);
 }
 
 .inline-error {
@@ -3914,7 +3914,7 @@ body::before {
   min-height: 36px;
   padding: 0 12px;
   border-radius: 12px;
-  background: rgba(212,181,113,0.16);
+  background: rgba(16,86,102,0.16);
   color: var(--primary-dark);
   font-weight: 800;
 }
@@ -3932,7 +3932,7 @@ body::before {
   height: 132px;
   flex-shrink: 0;
   background:
-    linear-gradient(160deg, rgba(111,81,21,0.95), rgba(212,181,113,0.72)),
+    linear-gradient(160deg, rgba(10,51,35,0.95), rgba(16,86,102,0.72)),
     linear-gradient(0deg, rgba(0,0,0,0.2), transparent);
 }
 
@@ -3959,7 +3959,7 @@ body::before {
   gap: 6px;
   padding: 18px;
   color: #fffaf0;
-  background: linear-gradient(145deg, rgba(111,81,21,0.92), rgba(212,181,113,0.58));
+  background: linear-gradient(145deg, rgba(10,51,35,0.92), rgba(131,153,88,0.58));
 }
 
 .preview-label,
@@ -4032,7 +4032,7 @@ body::before {
 }
 
 .story-chip.active {
-  background: linear-gradient(160deg, rgba(111,81,21,0.95), rgba(212,181,113,0.72));
+  background: linear-gradient(160deg, rgba(10,51,35,0.95), rgba(16,86,102,0.72));
   color: #fff9ec;
   border-color: transparent;
 }
@@ -4094,7 +4094,7 @@ body::before {
 
 .profile-cover,
 .profile-cover-placeholder {
-  background: linear-gradient(135deg, rgba(111,81,21,0.95) 0%, rgba(212,181,113,0.92) 52%, rgba(233,213,164,0.82) 100%);
+  background: linear-gradient(135deg, rgba(10,51,35,0.95) 0%, rgba(131,153,88,0.92) 52%, rgba(16,86,102,0.82) 100%);
 }
 
 .create-post-input,
@@ -4122,19 +4122,19 @@ body::before {
 
 .message-bubble.own,
 .chat-send-btn {
-  background: linear-gradient(135deg, #E0C78E 0%, #D4B571 58%, #B88C38 100%);
-  color: #090B0B;
-  box-shadow: 0 18px 32px -24px rgba(212,181,113,0.46);
+  background: linear-gradient(135deg, #105666 0%, #0A3323 100%);
+  color: #F7F4D5;
+  box-shadow: 0 18px 32px -24px rgba(16,86,102,0.46);
 }
 
 .chat-send-btn:hover {
-  box-shadow: 0 22px 36px -20px rgba(212,181,113,0.4);
+  box-shadow: 0 22px 36px -20px rgba(16,86,102,0.4);
 }
 
 .online-indicator {
   background: var(--primary);
   border-color: var(--surface-strong);
-  box-shadow: 0 0 0 1px rgba(212,181,113,0.22);
+  box-shadow: 0 0 0 1px rgba(16,86,102,0.22);
 }
 
 .notification-item.unread,
@@ -4168,9 +4168,9 @@ body::before {
 .skeleton {
   background: linear-gradient(
     90deg,
-    rgba(212,181,113,0.05) 0%,
+    rgba(131,153,88,0.08) 0%,
     var(--surface-subtle) 48%,
-    rgba(212,181,113,0.05) 100%
+    rgba(131,153,88,0.08) 100%
   );
 }
 
@@ -4282,7 +4282,7 @@ body::before {
 
 .feed-filter-btn.active {
   background: var(--primary-light);
-  border-color: rgba(212,181,113,0.24);
+  border-color: rgba(16,86,102,0.24);
   color: var(--primary-dark);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
 }

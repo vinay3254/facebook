@@ -15,8 +15,8 @@ root.render(
           position="top-right"
           toastOptions={{
             duration: 3000,
-            style: { background: '#121414', color: '#F5E7C6', boxShadow: '0 12px 28px rgba(0,0,0,0.35)', borderRadius: '12px', border: '1px solid rgba(212,181,113,0.14)' },
-            success: { iconTheme: { primary: '#D4B571', secondary: '#090B0B' } },
+            style: { background: '#0A3323', color: '#F7F4D5', boxShadow: '0 12px 28px rgba(10,51,35,0.4)', borderRadius: '12px', border: '1px solid rgba(131,153,88,0.25)' },
+            success: { iconTheme: { primary: '#839958', secondary: '#0A3323' } },
           }}
         />
       </SocketProvider>

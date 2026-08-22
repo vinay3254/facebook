@@ -1,5 +1,5 @@
 export const guideMetadata = {
-  title: 'Facebook 2026 Field Guide',
+  title: 'Reunion 2026 Field Guide',
   verifiedOn: 'March 25, 2026',
   description:
     "A practical guide to the biggest Facebook surfaces, using official Meta announcements and Facebook Help Center docs where possible. Exact ranking formulas are not public, so reach advice combines Meta's published guidance with platform best practices.",

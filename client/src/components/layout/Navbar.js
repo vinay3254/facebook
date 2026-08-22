@@ -72,7 +72,7 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Left */}
       <div className="navbar-left">
-        <Link to="/" className="navbar-logo">Facebook</Link>
+        <Link to="/" className="navbar-logo">Reunion</Link>
         <form onSubmit={handleSearch} className="navbar-search">
           <SearchIcon size={16} />
           <input
